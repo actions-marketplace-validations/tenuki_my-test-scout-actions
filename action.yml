@@ -18,6 +18,8 @@ inputs:
 outputs:
   time:
     description: Time execution
+  mdreport:
+    description: markdown report
 
 #run docker
 runs:
