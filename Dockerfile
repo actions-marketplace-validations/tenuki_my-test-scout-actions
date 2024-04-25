@@ -3,4 +3,6 @@ SHELL ["/bin/bash", "-c"]
 WORKDIR /
 COPY . /scoutme
 
-RUN echo "echo \"mdreport=\$(cat ./report.md)\" \>\> \$GITHUB_OUTPUT"  >> /usr/src/entrypoint.sh
+RUN echo >> /usr/src/entrypoint.sh
+RUN echo "echo \"mdreport=# hello!\" \>\> \$GITHUB_OUTPUT"  >> /usr/src/entrypoint.sh
+RUN echo >> /usr/src/entrypoint.sh
